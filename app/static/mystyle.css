@@ -1,0 +1,194 @@
+@font-face{
+  font-family: trial;
+  src: url('Kiona-Regular.ttf');
+  font-weight: bold;}
+
+html, body
+{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 100%;
+  margin:0;
+  padding:0;
+  background-image: url('semiaquticsmain.png');
+  font-family: trial;
+}
+
+div {
+  position:relative;
+  height: 100%;
+  width:100%;
+}
+
+.shirt {
+  position:absolute;
+  top:0;
+  left:0;
+  right:100%;
+  bottom:0;
+  margin:auto;
+  z-index: 2;
+}
+
+h1 {
+  position:absolute;
+  top:8%;
+  left:20%;
+  right:0;
+  bottom:0;
+  margin:auto;
+  font-size: 40px;
+  width: 80%;
+  color: gray
+}
+
+.price {
+  position:absolute;
+  top:40%;
+  left:50%;
+  right:0;
+  bottom:0;
+  margin:auto;
+  font-size: 55px;
+  color: gray
+}
+
+.form {
+  position:absolute;
+  top:20%;
+  left:70%;
+  right:0;
+  bottom:0;
+  margin:auto;
+  font-size: 35px;
+
+}
+
+.purchases {
+  position:absolute;
+  top: 60%;
+  left:70%;
+  right:0;
+  bottom:0;
+  margin:auto;
+  font-size: 20px;
+
+}
+
+
+strong {
+  display: inline-block;
+  width: 20%;
+  border: 1px solid gray;
+  text-align: center;
+  color: black;
+  background-color: gray;
+
+
+}
+select {
+  display:table-row;
+}
+option {
+  display:table-cell;
+}
+
+.bar {
+  position:absolute;
+  top: -10%;
+  left:10%;
+  right:0;
+  bottom:13%;
+  margin:auto;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+
+}
+
+.txt1 {
+  position:absolute;
+  top: 30%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+}
+
+.txt2 {
+  position:absolute;
+  top: 33%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+
+}
+
+.txt3 {
+  position:absolute;
+  top: 36%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+
+}
+
+.txt4 {
+  position:absolute;
+  top: 39%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+
+}
+
+.txt5 {
+  position:absolute;
+  top: 42%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+
+}
+
+
+.txt6 {
+  position:absolute;
+  top: 45%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+
+}
+
+.txt7 {
+  position:absolute;
+  top: 48%;
+  left:52%;
+  right:0;
+  bottom:0;
+  font-size: 14px;
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  top: 95%;
+  bottom: 10%;
+  width: 100%;
+  background-color: cyan;
+  color: white;
+  text-align: right;
+  font-size : 20px;
+  color: black
+}

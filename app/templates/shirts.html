@@ -1,0 +1,21 @@
+    
+{% extends "base.html" %}
+{% block app_content %}
+<div>
+
+    <form class="form"  method="post" role="form" >
+      {{ form.hidden_tag() }}
+      {{ wtf.form_errors(form, hiddens="only") }}
+      {{ form.size(size=2) }}
+      {{ wtf.form_field(form.submit) }}
+
+    </form>
+
+
+
+    <div class="footer">
+        <p> CONTACT: INFO@SEMIAQUATICS.COM </p>
+    </div>
+</div>
+
+{% endblock %}
