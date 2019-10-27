@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, FileField, SelectField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, FileField, RadioField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 from app.models import User
 
@@ -30,5 +30,5 @@ class RegistrationForm(FlaskForm):
 
 
 class SizeForm(FlaskForm):
-    size = SelectField('Size', choices=[('30936373821525','S'), ('30936373788757' , 'M'),('30936373755989' , 'L '), ('30936373854293', 'XL')],default='30936373788757',  validators=[DataRequired()])
+    size = RadioField('Size', choices=[('30936373821525','S'), ('30936373788757' , 'M'),('30936373755989' , 'L '), ('30936373854293', 'XL')],default='30936373788757',  validators=[DataRequired()])
     submit = SubmitField('Add to Cart')

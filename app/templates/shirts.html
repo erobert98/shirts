@@ -1,21 +1,29 @@
     
 {% extends "base.html" %}
 {% block app_content %}
-<div>
 
-    <form class="form"  method="post" role="form" >
-      {{ form.hidden_tag() }}
-      {{ wtf.form_errors(form, hiddens="only") }}
-      {{ form.size(size=2) }}
-      {{ wtf.form_field(form.submit) }}
+<h1 class="title">SEMI AQUATICS EMBROIDERED CREW - AQUA</h1>
+<form class="form"  method="post" role="form" >
+  <span class="price">$55</span>
+  <label for="size">SIZE</label>
+  {{ form.hidden_tag() }}
+  {{ wtf.form_errors(form, hiddens="only") }}
+  {{ form.size(size=2) }}
+  {{ wtf.form_field(form.submit) }}
+</form>
 
-    </form>
+<div class="description">
+	<img class="preview" src="{{url_for('static', filename='AquaSweatshirt.png')}}">
+	<p>Crafted from the finest blank sweatshirt available</p>
+	<p>400GSM Heavyweight organic cotton with brushed interior embroidered logo</p>
+	<p>Reverse flatlock stitching to reduce bulk and increase durability</p>
+	<p>4" wide, double folded, flat-knit side ribbing for added flexibility</p>
+	<p>Pre-shrunk and treated to ensure minimal shrinkage</p>
+	<p>Standard fit</p>
+</div>
 
-
-
-    <div class="footer">
-        <p> CONTACT: INFO@SEMIAQUATICS.COM </p>
-    </div>
+<div class="footer">
+	<p> CONTACT: INFO@SEMIAQUATICS.COM </p>
 </div>
 
 {% endblock %}
