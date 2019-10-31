@@ -80,7 +80,7 @@ def index():
     form = SizeForm()
     if form.is_submitted():
         print(form.size.data)
-        return redirect(f"http://dub-denim-shirts.myshopify.com/cart/{form.size.data}:1")
+        return redirect(f"http://semi-aquatics.myshopify.com/cart/{form.size.data}:1")
     return render_template('shirts.html', form = form)
 
 

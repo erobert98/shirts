@@ -30,5 +30,5 @@ class RegistrationForm(FlaskForm):
 
 
 class SizeForm(FlaskForm):
-    size = RadioField('Size', choices=[('30936373821525','S'), ('30936373788757' , 'M'),('30936373755989' , 'L '), ('30936373854293', 'XL')],default='30936373788757',  validators=[DataRequired()])
+    size = RadioField('Size', choices=[('31094469853259','S'), ('31094469886027' , 'M'),('31094469918795' , 'L '), ('31094469984331', 'XL')],default='30936373788757',  validators=[DataRequired()])
     submit = SubmitField('Add to Cart')
