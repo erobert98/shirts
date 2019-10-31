@@ -77,6 +77,10 @@ def index():
     agent = request.headers.get('User-Agent')
     print(f"---------------------------------{agent}------------------------------------------")
     if any(phone in agent.lower() for phone in phones):
+        form = SizeForm()
+        if form.is_submitted():
+            print(form.size.data)
+            return redirect(f"http://semi-aquatics.myshopify.com/cart/{form.size.data}:1")
         return render_template('sorry.html')
     # for attr, value in vars(product).items():
     #     print(attr, value)
