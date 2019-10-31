@@ -8,7 +8,7 @@ from flask_login import LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from flask_security import Security, SQLAlchemyUserDatastore
-import shopify
+# import shopify
 import os
 
 

@@ -9,7 +9,7 @@ from werkzeug.utils import secure_filename
 import math
 import os
 from functools import wraps
-import shopify
+# import shopify
 # from app.file_util import store_fileInfo
 
 
