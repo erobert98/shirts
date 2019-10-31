@@ -75,7 +75,7 @@ def register():
 def index():
     phones = ["iphone", "android", "blackberry"]
     agent = request.headers.get('User-Agent')
-    print(agent)
+    print(f"---------------------------------{agent}------------------------------------------")
     if any(phone in agent.lower() for phone in phones):
         return render_template('sorry.html')
     # for attr, value in vars(product).items():
