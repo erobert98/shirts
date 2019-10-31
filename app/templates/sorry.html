@@ -1,3 +1,7 @@
+    
+{% extends "base.html" %}
+{% block app_content %}
+
 <img class="preview" src="{{url_for('static', filename='updatedAqua2.png')}}">
 <h1 class="title">SEMI AQUATICS EMBROIDERED CREW - AQUA</h1>
 <form class="form"  method="post" role="form" >
@@ -8,3 +12,7 @@
   {{ form.size(size=2) }}
   {{ wtf.form_field(form.submit) }}
 </form>
+
+
+
+{% endblock %}
