@@ -75,17 +75,16 @@ def register():
 def index():
     phones = ["iphone", "android", "blackberry"]
     agent = request.headers.get('User-Agent')
+    form = SizeForm()
     print(f"---------------------------------{agent}------------------------------------------")
     if any(phone in agent.lower() for phone in phones):
-        form = SizeForm()
         if form.is_submitted():
             print(form.size.data)
             return redirect(f"http://semi-aquatics.myshopify.com/cart/{form.size.data}:1")
-        return render_template('sorry.html', form = form)
+        return render_template('sorry.html', form =)
     # for attr, value in vars(product).items():
     #     print(attr, value)
     # print(type(product))
-    form = SizeForm()
     if form.is_submitted():
         print(form.size.data)
         return redirect(f"http://semi-aquatics.myshopify.com/cart/{form.size.data}:1")
