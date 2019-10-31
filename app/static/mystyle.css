@@ -118,8 +118,8 @@ div.footer{
 	right: 0px;
 	text-align: right;
 	background-color: rgb(120,171,172);
-	padding-top: 15px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 0px;
 	padding-right: 50px;
 	font-size: 15px;
 }
