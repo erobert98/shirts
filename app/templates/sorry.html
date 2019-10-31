@@ -2,11 +2,11 @@
 {% extends "base.html" %}
 {% block app_content %}
 
-<img class="preview" src="{{url_for('static', filename='updatedAqua2.png')}}">
+<img  src="{{url_for('static', filename='updatedAqua2.png')}}">
 <h1 class="title">SEMI AQUATICS EMBROIDERED CREW - AQUA</h1>
-<form class="form"  method="post" role="form" >
-  <span class="price">$60</span>
-  <label for="size">SIZE</label>
+<form  method="post" role="form" >
+  <span >$60</span>
+  <label >SIZE</label>
   {{ form.hidden_tag() }}
   {{ wtf.form_errors(form, hiddens="only") }}
   {{ form.size(size=2) }}
