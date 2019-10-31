@@ -17,8 +17,8 @@ Bootstrap(app)
 # sslify = SSLify(app)
 app.config.from_object('config.Config')
 db = SQLAlchemy(app)
-shop_url = "https://88a56f54b8b8afe3ed9159d650ab650c:0a9ace65d62c275bb3772607af64e103@dub-denim-shirts.myshopify.com/admin/api/2019-10"
-shopify.ShopifyResource.set_site(shop_url)
+# shop_url = "https://88a56f54b8b8afe3ed9159d650ab650c:0a9ace65d62c275bb3772607af64e103@dub-denim-shirts.myshopify.com/admin/api/2019-10"
+# shopify.ShopifyResource.set_site(shop_url)
 
 migrate = Migrate(app, db)
 login = LoginManager(app)
