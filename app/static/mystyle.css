@@ -108,7 +108,7 @@ div.description{
 div.description img.preview{
 	position: absolute;
 	left: -400px;
-	top: -80px;
+	top: -150px;
 }
 
 div.footer{
@@ -118,8 +118,8 @@ div.footer{
 	right: 0px;
 	text-align: right;
 	background-color: rgb(120,171,172);
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 15px;
+	padding-bottom: 10px;
 	padding-right: 50px;
 	font-size: 15px;
 }
