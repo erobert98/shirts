@@ -73,7 +73,10 @@ def register():
 @app.route('/index', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    
+    phones = ["iphone", "android", "blackberry"]
+    agent = request.headers.get('User-Agent')
+    if any(phone in agent.lower() for phone in phones):
+        return render_template('sorry.html')
     # for attr, value in vars(product).items():
     #     print(attr, value)
     # print(type(product))
