@@ -81,7 +81,7 @@ def index():
         if form.is_submitted():
             print(form.size.data)
             return redirect(f"http://semi-aquatics.myshopify.com/cart/{form.size.data}:1")
-        return render_template('sorry.html')
+        return render_template('sorry.html', form = form)
     # for attr, value in vars(product).items():
     #     print(attr, value)
     # print(type(product))
