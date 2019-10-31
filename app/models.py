@@ -30,6 +30,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(120), index=True, unique=True)
     password_hash = db.Column(db.String(128))
     active = db.Column(db.Boolean())
+    activated = db.Column(db.Boolean(), default = False)
     roles = db.relationship(
         'Role',
         secondary=roles_users,

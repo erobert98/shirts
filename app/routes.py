@@ -44,6 +44,9 @@ def login():
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
             return redirect(url_for('login'))
+        if user.activated is False:
+            flash('Please wait for login approval')
+            return render_template('dog.html')
         login_user(user, remember=form.remember_me.data, force=True)
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':
@@ -72,6 +75,7 @@ def register():
 
 @app.route('/index', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
+@login_required
 def index():
     phones = ["iphone", "android", "blackberry"]
     agent = request.headers.get('User-Agent')
