@@ -76,7 +76,7 @@ def register():
 
 @app.route('/index', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
-@login_required
+# @login_required
 def index():
     phones = ["iphone", "android", "blackberry"]
     agent = request.headers.get('User-Agent')
