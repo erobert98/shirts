@@ -35,6 +35,14 @@ form.form span.price{
 	color: rgb(126,127,128);
 }
 
+span.soldout{
+	position: absolute;
+	top: 300px;
+	right: 470px;
+	color: rgb(255, 0, 0);
+	font-size: 40px;
+}
+
 form.form label[for='size']{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
